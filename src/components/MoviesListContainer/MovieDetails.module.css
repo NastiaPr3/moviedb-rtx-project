@@ -1,0 +1,190 @@
+.MovieDetails {
+    display: flex;
+    flex-direction: column;
+}
+
+.lightBackground {
+    background-image: linear-gradient(to bottom, #d7d5d5, #dedcdb, #e5e3e1, #ebeae7, #f0f1ee);}
+
+.darkBackground {
+    background-image: linear-gradient(to bottom, #1f1e1e, #272525, #2f2d2d, #373434, #403c3c);
+
+}
+
+.details {
+    display: flex;
+}
+
+.head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+}
+
+.dark {
+    background: #1f1e1e;
+}
+
+.light {
+    background: #d7d5d5;
+}
+
+
+.head h1 {
+    color: whitesmoke;
+    text-align: center;
+}
+
+.head h3 {
+    color: whitesmoke;
+}
+
+.head p {
+    color: whitesmoke;
+}
+
+.Btn {
+    width: 200px;
+    font-size: 30px;
+}
+
+.darkBtn {
+    background: #2f2d2d;
+}
+
+.lightBtn {
+    border: 1px solid silver;
+    background: #f8f6f6;
+    color: silver;
+}
+
+
+.main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 1000px;
+}
+
+.main h3 {
+    text-align: center;
+    color: whitesmoke;
+}
+
+.main h6 {
+    text-align: center;
+    color: whitesmoke;
+}
+
+.mainImage {
+    width: 350px;
+    height: 500px;
+}
+
+.imagesDiv {
+    margin-top: 10px;
+
+}
+
+.imagesDiv img {
+    width: 250px;
+    cursor: pointer;
+}
+
+.imagesDiv h4 {
+    color: whitesmoke;
+}
+
+.image {
+    width: 500px;
+}
+
+.imgWidth {
+    width: 500px;
+}
+
+.Circle {
+    border-radius: 50%;
+    object-fit: cover;
+    height: 100px;
+    width: 100px;
+    cursor: pointer;
+}
+
+.CastDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.CastDiv h2 {
+    color: whitesmoke;
+}
+
+
+.Cast {
+    width: 600px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+}
+
+.castAndImage {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    color: whitesmoke;
+}
+
+
+.SliderDiv {
+    width: 100%;
+}
+
+.SliderImages {
+    width: 180px;
+    height: 280px;
+    cursor: pointer;
+}
+
+.SliderItems {
+    margin-right: 10px;
+}
+
+.SliderCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.GenresDiv {
+    display: flex;
+}
+
+.GenresDiv p {
+    margin: 0 10px 0 0;
+}
+
+.Badges {
+    cursor: pointer;
+}
+
+.watch {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: whitesmoke;
+}
+
+.carousel {
+    width: 90%;
+    color: whitesmoke;
+}
+
+
+
+

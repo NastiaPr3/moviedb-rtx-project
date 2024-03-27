@@ -1,0 +1,98 @@
+.Favorite {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.lightBackground {
+    background: whitesmoke;
+}
+
+.darkBackground {
+    background: #292929;
+}
+
+.main {
+    width: 80%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dark {
+    background: #1f1e1e;
+}
+
+.light {
+    background: #d7d5d5;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.MovieCard {
+    width: 230px;
+    height: 390px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+    transition: 1000ms;
+
+}
+
+.lightCards {
+    background: #bbb8b8;
+}
+
+.darkCards {
+    background:  #171616;
+}
+
+.MovieCard:hover {
+    transition: 1000ms;
+    -webkit-box-shadow: 10px 10px 54px 21px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 54px 21px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 54px 21px rgba(0,0,0,0.75);
+}
+
+.text {
+    width: 230px;
+    height: 25px;
+}
+
+.text p{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+}
+
+.lightText {
+    color: #464343;
+}
+
+.darkText {
+    color: silver;
+}
+
+.images {
+    width: 230px;
+    height: 330px;
+}
+
+.remove {
+    width: 40px;
+}
+.remove:hover {
+    width: 45px;
+}

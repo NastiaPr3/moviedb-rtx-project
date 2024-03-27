@@ -1,0 +1,122 @@
+.main {
+    width: 100%;
+    height: 1000px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.lightBackground {
+    background: whitesmoke;
+}
+
+.darkBackground {
+    background: #292929;
+}
+
+.main h1 {
+    color: whitesmoke;
+}
+
+.selectedMovie {
+    width: 80%;
+    height: 700px;
+}
+
+.dark {
+    background: #1f1e1e;
+}
+
+.light {
+    background: #d7d5d5;
+}
+
+.SliderDiv {
+    width: 100%;
+}
+
+.carousel {
+    width: 85%;
+    position: relative;
+    top: -30px;
+}
+
+.SliderImages {
+    width: 210px;
+    height: 310px;
+}
+
+.SliderItems {
+    margin-right: 10px;
+    cursor: pointer;
+    transition: 1000ms;
+
+}
+.SliderItems:hover {
+    transition: 1000ms;
+    -webkit-box-shadow: 10px 10px 54px 21px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 54px 21px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 54px 21px rgba(0,0,0,0.75);
+}
+
+.SliderCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Selected {
+    display: flex;
+    flex-direction: column;
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+}
+.imgAndStars {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+}
+
+.title h1:hover {
+    cursor: pointer;
+    color: wheat;
+}
+
+.video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.video p {
+    text-align: center;
+    color: silver;
+}
+
+.mainImage {
+    width: 500px;
+    height: 300px;
+    cursor: pointer;
+    transition: 1000ms;
+}
+
+.mainImage:hover {
+    transition: 1000ms;
+    -webkit-box-shadow: 10px 10px 54px 21px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 54px 21px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 54px 21px rgba(0,0,0,0.75);
+}
+
+.imagesDiv img {
+    width: 250px;
+    cursor: pointer;
+}

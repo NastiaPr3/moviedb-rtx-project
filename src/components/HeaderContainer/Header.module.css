@@ -1,0 +1,172 @@
+.Header {
+    width: 100%;
+    height: 65px;
+    /*position: relative;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lightBackground {
+    background: #c4c0c0;
+}
+
+.darkBackground {
+    background: #171616;
+}
+
+.first {
+    display: flex;
+}
+
+.home {
+    position: relative;
+    right: 250px;
+}
+
+.home a {
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.home a:hover {
+    color: wheat;
+}
+
+.Genres {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100px;
+    height: 30px;
+    position: relative;
+    left: 250px;
+    color: white;
+    font-size: 30px;
+}
+
+.genresList {
+    position: absolute;
+    top: 100%;
+    display: none;
+    font-size: 15px;
+}
+
+.Genres:hover .genresList,
+.genresList:hover {
+    display: block;
+}
+
+.Genres:hover {
+    color: wheat;
+}
+
+
+.searchForm {
+    position: relative;
+    width: 400px;
+    margin-left: 150px;
+}
+
+
+.Form_and_Button {
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: 350px;
+}
+
+.Input {
+    width: 230px;
+    height: 33px;
+    border: none;
+    border-radius: 5px;
+    padding: 0 0 0 50px;
+    font-size: 15px;
+    color: gray;
+}
+
+.inputLight {
+    background: #f8f6f6;
+}
+
+.inputDark {
+    background: #2f2d2d;
+}
+
+.inputDark:focus {
+    background: #525050;
+}
+
+.inputLight:focus {
+    background: #eee7e7;
+}
+
+.SearchButton {
+    width: 60px;
+    border-radius: 5px;
+    position: relative;
+    right: 65px;
+}
+
+.darkBtn {
+    background: #737373;
+}
+
+.lightBtn {
+    background: #c4c2c2;
+}
+
+.icon {
+    position: absolute;
+    left: 5px;
+    width: 32px;
+    height: 32px;
+    transform: scale(-1, 1);
+}
+
+.lightIcon {
+    fill: silver;
+}
+
+.darkIcon {
+    fill: #212121;
+}
+
+.IconUser {
+    width: 40px;
+    height: 40px;
+}
+
+.UserDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.UserDiv p {
+    color: wheat;
+    font-size: 10px;
+}
+
+.linkAuth, .linkFav {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.linkAuth:hover, .linkFav:hover {
+    color: wheat;
+}
+
+.linkAuth {
+    margin-right: 5px;
+}
+
+.linkFav {
+    margin-right: 20px;
+}
+

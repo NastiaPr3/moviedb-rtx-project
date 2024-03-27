@@ -1,0 +1,106 @@
+.ActorMovies {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.lightBackground {
+    background: whitesmoke;
+}
+
+.darkBackground {
+    background: #292929;
+}
+
+.main {
+    width: 80%;
+}
+
+.dark {
+    background: #1f1e1e;
+}
+
+.light {
+    background: #d7d5d5;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.MovieCard {
+    width: 230px;
+    height: 350px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+    transition: 1000ms;
+}
+
+.lightCards {
+    background: #bbb8b8;
+}
+
+.darkCards {
+    background:  #171616;
+}
+
+.MovieCard:hover {
+    transition: 1000ms;
+    -webkit-box-shadow: 10px 10px 54px 21px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 54px 21px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 54px 21px rgba(0,0,0,0.75);
+}
+
+.images {
+    width: 230px;
+    height: 330px;
+}
+
+.btnDiv {
+    width: 100%;
+    align-items: flex-start;
+}
+
+.Btn {
+    width: 200px;
+    font-size: 30px;
+}
+
+.darkBtn {
+    background: #2f2d2d;
+}
+
+.lightBtn {
+    border: 1px solid silver;
+    background: #f8f6f6;
+    color: silver;
+}
+
+.text {
+    width: 230px;
+    height: 25px;
+}
+
+.text p{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+}
+
+.lightText {
+    color: #464343;
+}
+
+.darkText {
+    color: silver;
+}

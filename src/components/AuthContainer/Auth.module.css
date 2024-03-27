@@ -1,0 +1,49 @@
+.Auth {
+    width: 100%;
+    height: 91vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lightBackground {
+    background: whitesmoke;
+}
+
+.darkBackground {
+    background: #292929;
+}
+
+.main {
+    width: 80%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.dark {
+    background: #1f1e1e;
+    color: wheat;
+}
+
+.light {
+    background: #d7d5d5;
+}
+
+.Btn {
+    height: 50px;
+    font-size: 30px;
+}
+
+.darkBtn {
+    background: #2f2d2d;
+}
+
+.lightBtn {
+    border: 1px solid silver;
+    background: #f8f6f6;
+    color: silver;
+}
