@@ -3,17 +3,16 @@ import {useNavigate} from "react-router-dom";
 
 import {IMovie} from "../../interfaces";
 import {useAppDispatch, useAppSelector} from "../../hooks";
+import {authActions} from "../../redux";
 
 import css from './Movies.module.css'
-import {useDispatch} from "react-redux";
-import {authActions} from "../../redux/slices/authSlice";
 
 interface IProps extends PropsWithChildren {
     movie: IMovie
 }
 
 const MovieList: FC<IProps> = ({movie}) => {
-    const {id, title, poster_path, vote_average} = movie;
+    const {id, title, poster_path} = movie;
     const {theme} = useAppSelector(state => state.theme);
     const dispatch = useAppDispatch();
 

@@ -1,18 +1,14 @@
 import {createAsyncThunk, createSlice} from "@reduxjs/toolkit";
-import {IRequestToken} from "../../interfaces/requestTokenInterface";
 import {AxiosError} from "axios";
-import {authService} from "../../services/authService";
-import {IAccount} from "../../interfaces/accountDetailsInterface";
-import {ISession} from "../../interfaces/sessionInterface";
-import {IFavorite} from "../../interfaces/addFavouriteInterface";
-import {IMovie, IMovies} from "../../interfaces";
+
+import {authService} from "../../services";
+import {IMovie, IMovies, IRequestToken, IAccount, ISession, IFavorite} from "../../interfaces";
 
 interface IState {
     req: string,
     sessionId: string
     accountId: number,
     movies: IMovie[],
-    deleteSes: boolean
 }
 
 const initialState: IState = {
@@ -20,7 +16,6 @@ const initialState: IState = {
     sessionId: null,
     accountId: null,
     movies: [],
-    deleteSes: null
 }
 
 const getRequestToken = createAsyncThunk<IRequestToken, void>(
@@ -132,9 +127,6 @@ const authSlice = createSlice({
             })
             .addCase(getFavoriteMovies.fulfilled, (state, action) => {
                 state.movies = action.payload.results
-            })
-            .addCase(deleteSession.fulfilled, (state, action) => {
-                state.deleteSes = action.payload
             })
     }
 })

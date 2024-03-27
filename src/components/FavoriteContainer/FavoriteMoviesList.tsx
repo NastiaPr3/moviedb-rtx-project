@@ -1,9 +1,11 @@
-import {FC, PropsWithChildren, useEffect} from "react";
+import {FC, PropsWithChildren} from "react";
+import {useNavigate} from "react-router-dom";
+
 import {IMovie} from "../../interfaces";
 import {useAppDispatch, useAppSelector} from "../../hooks";
+import {authActions} from "../../redux";
+
 import css from "../FavoriteContainer/Favorite.module.css";
-import {useNavigate} from "react-router-dom";
-import {authActions} from "../../redux/slices/authSlice";
 
 interface IProps extends PropsWithChildren {
     movie: IMovie
@@ -11,7 +13,7 @@ interface IProps extends PropsWithChildren {
 
 const FavoriteMoviesList: FC<IProps> = ({movie}) => {
 
-    const {id, title, poster_path, vote_average} = movie;
+    const {id, title, poster_path} = movie;
     const {theme} = useAppSelector(state => state.theme);
     const navigate = useNavigate();
     const dispatch = useAppDispatch();
@@ -19,10 +21,8 @@ const FavoriteMoviesList: FC<IProps> = ({movie}) => {
     const deleteFromFav = () => {
         const accountId = localStorage.getItem('account_id');
         const sessionId = localStorage.getItem('session_id')
-
         dispatch(authActions.deleteFavoriteMovie({accountId, sessionId, movieId: id}))
     }
-
 
     return (
         <div className={`${css.MovieCard} ${theme === 'light' ? css.lightCards : css.darkCards}`}>

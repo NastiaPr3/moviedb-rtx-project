@@ -1,6 +1,8 @@
 import {Outlet} from "react-router-dom";
-import css from "./MainLayout.module.css";
+
 import {useAppSelector} from "../hooks";
+
+import css from "./MainLayout.module.css";
 
 const AuthLayout = () => {
     const {theme} = useAppSelector(state => state.theme);

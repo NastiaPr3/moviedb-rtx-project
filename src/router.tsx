@@ -1,11 +1,10 @@
 import {createBrowserRouter, Navigate} from "react-router-dom";
 
 import {MainLayout} from "./layouts";
-import {MoviesPage, ChosenMoviePage, ChosenGenrePage, ActorPage, SearchPage} from "./pages";
-import {AuthPage} from "./pages/AuthPage";
-import {FavoriteMoviesPage} from "./pages/FavoriteMoviesPage";
-import {AuthRequired} from "./hoc/AuthRequired";
-import {AuthLayout} from "./layouts/AuthLayout";
+import {MoviesPage, ChosenMoviePage, ChosenGenrePage, ActorPage, SearchPage, AuthPage, FavoriteMoviesPage} from "./pages";
+
+import {AuthRequired} from "./hoc";
+import {AuthLayout} from "./layouts";
 
 const router = createBrowserRouter([
     {
@@ -45,7 +44,6 @@ const router = createBrowserRouter([
             {
                 path: 'auth', element: <AuthPage/>
             }
-
         ]
     }
 ])

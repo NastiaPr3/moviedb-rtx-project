@@ -24,7 +24,6 @@ const SearchByName = () => {
 
     useEffect(() => {
         dispatch(searchActions.search({movieName: currentName, page: page}))
-        console.log(totalPage);
     }, [currentName, page, totalPage]);
 
     const handlePaginationChange = (event: React.ChangeEvent<unknown>, value: number) => {

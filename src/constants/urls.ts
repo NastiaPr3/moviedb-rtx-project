@@ -1,6 +1,5 @@
 const baseURL = 'https://api.themoviedb.org';
 const API_KEY = 'api_key=89c280d9540eb692d6636c6c77c4b05a';
-const language = 'language=uk-UA'
 
 const movies = '/3/discover/movie';
 const movieById = '/3/movie';

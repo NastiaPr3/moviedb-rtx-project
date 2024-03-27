@@ -128,10 +128,9 @@ const DetailsOfChosenMovie: FC<IProps> = ({movie}) => {
                     <div className={css.watch}>
                         {video && <h4>Watch trailer</h4>}
                         {
-                            video && <YouTube videoId={video.key} opts={opts}/>
+                            video && <YouTube videoId={video.key} opts={opts} key={video.key}/>
                         }
                     </div>
-
 
                     <div className={css.imagesDiv}>
                         {

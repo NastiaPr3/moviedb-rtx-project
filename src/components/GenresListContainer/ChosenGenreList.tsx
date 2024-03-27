@@ -12,7 +12,7 @@ interface IProps extends PropsWithChildren {
 
 const ChosenGenreList: FC<IProps> = ({genreMovie}) => {
 
-    const {id, title, poster_path, vote_average} = genreMovie;
+    const {id, title, poster_path} = genreMovie;
     const {theme} = useAppSelector(state => state.theme);
     const navigate = useNavigate();
 

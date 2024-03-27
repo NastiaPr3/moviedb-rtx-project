@@ -1,6 +1,7 @@
-import {useAppDispatch, useAppSelector} from "../../hooks";
 import {useEffect} from "react";
-import {authActions} from "../../redux/slices/authSlice";
+
+import {useAppDispatch, useAppSelector} from "../../hooks";
+import {authActions} from "../../redux";
 import {FavoriteMoviesList} from "./FavoriteMoviesList";
 
 import css from './Favorite.module.css'
@@ -25,9 +26,7 @@ const FavoriteMovies = () => {
                         movies && movies.map(movie => <FavoriteMoviesList key={movie.id} movie={movie}/>)
                     }
                 </div>
-
             </div>
-
         </div>
     );
 };

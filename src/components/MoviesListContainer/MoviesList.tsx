@@ -75,7 +75,6 @@ const MoviesList = () => {
                         />
                     </Stack>
                 </div>
-
             </div>
         </div>
 

@@ -80,7 +80,6 @@ const ChosenGenre = () => {
                                         }}
                         />
                     </Stack>
-
                 </div>
             </div>
         </div>

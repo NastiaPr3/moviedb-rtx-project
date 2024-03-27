@@ -1,10 +1,7 @@
 import {IRes} from "../types";
-import {IRequestToken} from "../interfaces/requestTokenInterface";
 import {apiService} from "./apiService";
 import {urls} from "../constants";
-import {IAccount} from "../interfaces/accountDetailsInterface";
-import {ISession} from "../interfaces/sessionInterface";
-import {IMovie, IMovies} from "../interfaces";
+import {IMovie, IMovies, IRequestToken, ISession, IAccount} from "../interfaces";
 
 const authService = {
     getRequestToken: (): IRes<IRequestToken> => apiService.get(urls.requestToken.base),
@@ -25,9 +22,7 @@ const authService = {
 
     getFavoriteMovies: (accountId: string, sessionId: string): IRes<IMovies<IMovie>> => apiService.get(urls.getFavoriteMovies(accountId, sessionId)),
 
-    deleteSession: (sessionId: string) => apiService.delete(urls.deleteSession.base, { params: { session_id: sessionId }})
-
-
+    deleteSession: (sessionId: string) => apiService.delete(urls.deleteSession.base, {params: {session_id: sessionId}})
 }
 
 export {

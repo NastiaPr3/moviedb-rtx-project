@@ -2,9 +2,9 @@ import {FC, PropsWithChildren} from "react";
 import {useNavigate} from "react-router-dom";
 
 import {IMovie} from "../../interfaces";
-
-import css from "../GenresListContainer/ChosenGenre.module.css";
 import {useAppSelector} from "../../hooks";
+
+import css from "./Search.module.css";
 
 interface IProps extends PropsWithChildren {
     movies: IMovie
@@ -12,7 +12,7 @@ interface IProps extends PropsWithChildren {
 
 const SearchMovie: FC<IProps> = ({movies}) => {
 
-    const {id, title, poster_path, vote_average} = movies;
+    const {id, title, poster_path} = movies;
     const {theme} = useAppSelector(state => state.theme);
     const navigate = useNavigate();
 

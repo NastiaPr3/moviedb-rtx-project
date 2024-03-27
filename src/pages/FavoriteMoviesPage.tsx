@@ -1,4 +1,4 @@
-import {FavoriteMovies} from "../components/FavoriteContainer/FavoriteMovies";
+import {FavoriteMovies} from "../components";
 
 const FavoriteMoviesPage = () => {
     return (

@@ -1,16 +1,15 @@
 import * as React from 'react';
 import {Link, useNavigate} from "react-router-dom";
-import {useState} from "react";
 import {useForm} from "react-hook-form";
 
 import {GenresList} from "../GenresListContainer";
 import {useAppDispatch, useAppSelector} from "../../hooks";
+import {themeActions} from "../../redux";
 
 import {MaterialUISwitch} from '../../styles';
-import css from './Header.module.css';
 
+import css from './Header.module.css';
 import FormControlLabel from '@mui/material/FormControlLabel';
-import {themeActions} from "../../redux/slices/themeSlice";
 
 const Header = () => {
     const {theme} = useAppSelector(state => state.theme);
@@ -47,7 +46,6 @@ const Header = () => {
                     <GenresList/>
                 </div>
             </div>
-
 
             <div className={css.Form_and_Button}>
                 <form onSubmit={handleSubmit(submit)}>
