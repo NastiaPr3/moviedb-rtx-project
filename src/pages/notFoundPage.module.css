@@ -1,0 +1,11 @@
+.notFound {
+    width: 100%;
+    text-align: center;
+    font-size: 80px;
+}
+
+.hr {
+    width: 100vw;
+    border: 2px solid silver;
+    color: #403c3c;
+}

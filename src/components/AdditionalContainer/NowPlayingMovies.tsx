@@ -16,9 +16,14 @@ const NowPlayingMovies = () => {
     const {theme} = useAppSelector(state => state.theme);
     const dispatch = useAppDispatch();
 
+    // const handleClick = (value: any) => {
+    //     dispatch(additionalActions.setMovie(value))
+    // }
+
     useEffect(() => {
         dispatch(additionalActions.nowPlayingMovies());
     }, []);
+
 
 
     return (
