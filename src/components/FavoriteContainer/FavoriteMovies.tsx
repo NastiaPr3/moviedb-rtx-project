@@ -5,7 +5,6 @@ import {authActions} from "../../redux";
 import {FavoriteMoviesList} from "./FavoriteMoviesList";
 
 import css from './Favorite.module.css'
-import {IMovie} from "../../interfaces";
 
 const FavoriteMovies = () => {
 
@@ -22,13 +21,14 @@ const FavoriteMovies = () => {
         dispatch(authActions.getFavoriteMovies({accountId, sessionId}))
     }, [dispatch, trigger]);
 
-    
+
     return (
         <div className={`${css.Favorite} ${theme === 'light' ? css.lightBackground : css.darkBackground}`}>
             <div className={`${css.main} ${theme === 'light' ? css.light : css.dark}`}>
                 <div className={css.cards}>
                     {
-                        movies && movies.map(movie => <FavoriteMoviesList key={movie.id} movie={movie} setTrigger={setTrigger}/>)
+                        movies && movies.map(movie => <FavoriteMoviesList key={movie.id} movie={movie}
+                                                                          setTrigger={setTrigger}/>)
                     }
                 </div>
             </div>
